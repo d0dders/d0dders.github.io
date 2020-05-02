@@ -15,6 +15,12 @@
   }
 }
 
+@media (min-width: 576px) {
+  #heading {
+    font-size: 4rem;
+  }
+}
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
