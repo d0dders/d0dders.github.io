@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PaulRequest Web Development</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="album.css">
 </head>
-<body>
+<body class="postion-relative" data-spy="scroll" data-target="#navbar" data-offset="100">
   <header>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#"><strong>&lt;/&gt;</strong> PaulRequest</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,9 +17,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Portfolio</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -28,24 +28,21 @@
   
   <main role="main">
   
-    <section class="jumbotron jumbotron-fluid text-center">
+    <section id="home" class="jumbotron jumbotron-fluid text-center">
       <div class="container">
-        <h1 class="display-4 text-light"><strong>&lt;/&gt;</strong> PaulRequest</h1>
-        <p class="lead text-light">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+        <h1 class="display-3 text-light"><strong>&lt;/&gt;</strong> PaulRequest</h1>
+        <p class="lead text-light">Hey, I'm Paul. I'm a Scrum Master and aspiring web developer. Here you can see some of the things I have created, and I've included a couple of ways to get in touch. Don't hesitate to reach out if you'd like to chat!</p>
       </div>
     </section>
   
     <div class="album py-5 bg-light">
       <div class="container">
+        <h2 id="portfolio" class="display-4 text-center mb-5">Portfolio</h2>
         <div class="row">
           <div class="col-md-6 col-xl-4">
             <div class="card mb-4 shadow-sm">
               <div class="position-relative">
-                <img src="img/qiktip.png" class="img-fluid" alt="Responsive image">              
+                <img src="img/qiktip.png" class="img-fluid" alt="Responsive image" width="100%">              
                 <div class="m-0 row container overlay bg-dark align-items-center">
                   <div class="col">
                   <h4 class="text-center text-white">QikTip Mobile App</h4>
@@ -182,6 +179,16 @@
       </div>
     </div>
   
+    <div class="bg-dark py-5">
+      <div class="container pb-5 d-flex justify-content-center align-items-center">
+        <img src="img/me.jpg" width="90px" alt="Picture of Paul" class="rounded-circle img-thumbnail">
+        <h2 id="contact" class="display-4 text-light ml-3">Contact Me</h2>
+      </div>
+      <p class="text-center">
+        <a href="mailto:dodders@outlook.com" class="btn btn-light btn-lg d-inline-flex"><img src="img/email.svg" class="mr-2" alt="Email Icon" height="30px"> Email Me</a>
+        <a href="https://www.linkedin.com/in/pauldodkins/" target="_blank" class="btn btn-light btn-lg d-inline-flex ml-3"><img src="img/linkedin.svg" class="mr-2" alt="LinkedIn Icon" height="30px"> LinkedIn</a>
+      </p>
+    </div>
   </main>
   
   <footer class="text-muted">
