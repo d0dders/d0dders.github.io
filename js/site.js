@@ -3,7 +3,7 @@ $('body').scrollspy({ target: '#navbar' , offset: 100});
 
 //AWWW SNAP!!
 $(".avatar").click(function(){
-    $(".avatar").fadeOut();
+    $(".avatar").fadeTo('slow', 0);
 });
 
 
